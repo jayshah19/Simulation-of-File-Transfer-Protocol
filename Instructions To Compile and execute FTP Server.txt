@@ -1,0 +1,74 @@
+
+// ASP PROJECT: SIMULATION OF FTP PROTOCOL
+
+// SECTION-2
+
+// JAY PARESHKUMAR SHAH (110072802)
+// MANSI MITESHKUMAR SHAH (110073005)
+
+
+==============================================================Important Instructions:==============================================================
+
+For the Client-Server Communication we used Predefind PORT NUMBER as 21 For both Client And Server. Main reason for choose PORT Number as 21 is that it is commonly associated with FTP and it controls the FTP session. 
+
+-> Multi-client support Avilable
+
+-> User Authentication with Normal user and Super user.
+
+Some commands Need a pasive Mode. For that Please use "PASV" command first and then the required command that you want a excution
+=================================================================== SERVER ======================================================================
+
+-> cd FTPServer
+
+-> sudo gcc -o server FTPServer.c FTPServerCreate.c FTPServerProcess.c Command_Cdup.c Command_Cwd.c Command_Help.c Command_List.c Command_Mkd.c Command_Noop.c Command_Pass.c Command_Pasv.c Command_Pwd.c Command_Quit.c Command_Rein.c Command_Retr.c Command_Rwd.c Command_Stor.c Command_Syst.c Command_Type.c Command_User.c RepliesNegative.c RepliesPositive.c User_Add.c User_Name_Check.c User_Names.c User_Password_Check.c
+
+-> sudo ./server
+
+=================================================================== CLIENT ======================================================================
+
+-> cd FTPClient
+
+-> sudo gcc -o client FTPClient.c CreateClientSocket.c CreateData.c DirectoryCheck.c GetFile.c ProcessList.c ProcessPasv.c ProcessRetr.c ProcessStor.c ReadResponse.c
+
+-> sudo ./client 127.0.0.1
+
+================================================================ UserName And Passwords ======================================================================
+
+
+Here we implemented username And Password Authentication for connection establishment between server and client
+
+All username-password are case sensetive
+
+				
+======================================================================================================================================================
+
+						For Normal Users
+				
+				Name: 					Password:
+				
+
+			->  aznam				        yacoub
+
+			->	jay							admin
+
+			->	mansi						shah
+
+			->	karan						GA
+				
+======================================================================================================================================================			
+				
+		For Super Users (No password Needed For Super Users)
+						
+				->		Professor
+
+				->		AZNAM
+						
+======================================================================================================================================================
+
+
+
+
+
+
+
+
