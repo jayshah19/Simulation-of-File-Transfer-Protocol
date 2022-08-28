@@ -45,16 +45,16 @@ All username-password is case sensitive
 
 For Normal Users
 				
-Name: 					Password:
+Name:: 					Password
 				
 
-->  aznam				  yacoub
+->  aznam::				  yacoub
 
-->  jay					  admin
+->  jay::			          admin
 
-->  mansi				  shah
+->  mansi::				  shah
 
-->  karan			          GA
+->  karan::			          GA
 				
 ================================		
 				
