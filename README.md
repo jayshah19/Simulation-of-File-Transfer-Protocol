@@ -33,7 +33,7 @@ Some commands Need a passive Mode. For that, Please use the "PASV" command first
 
 -> sudo ./client 127.0.0.1
 
-================================ UserName And Passwords ================================
+======================= UserName And Passwords =======================
 
 
 Here i implemented Username And Password Authentication for connection establishment between server and client
