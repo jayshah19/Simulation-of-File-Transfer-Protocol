@@ -8,3 +8,61 @@ Here The "USER" command and the "PASS" command are used to communicate the usern
 
 I have generated 17 commands for the various operations we can perform using this file transfer protocol. Following is a list of all commands;
 USER, PASS, HELP, QUIT, PWD, CWD, CDUP, MKD, RMD, LIST, NOOP, PASV, REIN, RETR, STOR, SYST, TYPE
+
+============================================================== Important Instructions :==============================================================
+
+For the Client-Server Communication, we used Predefind PORT NUMBER as 21 For both Client And Server. 
+
+The main reason for choosing PORT Number 21 is that it is commonly associated with FTP and controls the FTP session. 
+
+Some commands Need a passive Mode. For that, Please use the "PASV" command first and then the required command that you want an execution
+=================================================================== SERVER ======================================================================
+
+-> cd FTPServer
+
+-> sudo gcc -o server FTPServer.c FTPServerCreate.c FTPServerProcess.c Command_Cdup.c Command_Cwd.c Command_Help.c Command_List.c Command_Mkd.c Command_Noop.c Command_Pass.c Command_Pasv.c Command_Pwd.c Command_Quit.c Command_Rein.c Command_Retr.c Command_Rwd.c Command_Stor.c Command_Syst.c Command_Type.c Command_User.c RepliesNegative.c RepliesPositive.c User_Add.c User_Name_Check.c User_Names.c User_Password_Check.c
+
+-> sudo ./server
+
+=================================================================== CLIENT ======================================================================
+
+-> cd FTPClient
+
+-> sudo gcc -o client FTPClient.c CreateClientSocket.c CreateData.c DirectoryCheck.c GetFile.c ProcessList.c ProcessPasv.c ProcessRetr.c ProcessStor.c ReadResponse.c
+
+-> sudo ./client 127.0.0.1
+
+================================================================ UserName And Passwords ======================================================================
+
+
+Here we implemented Username And Password Authentication for connection establishment between server and client
+
+All username-password is case sensitive
+
+				
+======================================================================================================================================================
+
+						For Normal Users
+				
+				Name: 					Password:
+				
+
+			->  aznam				  yacoub
+
+			->	jay					  admin
+
+			->	mansi					shah
+
+			->	karan					GA
+				
+======================================================================================================================================================			
+				
+		For Super Users (No password Needed For Super Users)
+						
+				->		Professor
+
+				->		AZNAM
+        
+        ->    JAY
+						
+======================================================================================================================================================
