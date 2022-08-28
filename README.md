@@ -11,7 +11,7 @@ USER, PASS, HELP, QUIT, PWD, CWD, CDUP, MKD, RMD, LIST, NOOP, PASV, REIN, RETR, 
 
 ======================= Important Instructions :=======================
 
-For the Client-Server Communication, we used Predefind PORT NUMBER as 21 For both Client And Server. 
+For the Client-Server Communication, i used Predefind PORT NUMBER as 21 For both Client And Server. 
 
 The main reason for choosing PORT Number 21 is that it is commonly associated with FTP and controls the FTP session. 
 
@@ -36,7 +36,7 @@ Some commands Need a passive Mode. For that, Please use the "PASV" command first
 ================================ UserName And Passwords ================================
 
 
-Here we implemented Username And Password Authentication for connection establishment between server and client
+Here i implemented Username And Password Authentication for connection establishment between server and client
 
 All username-password is case sensitive
 
