@@ -9,7 +9,7 @@ Here The "USER" command and the "PASS" command are used to communicate the usern
 I have generated 17 commands for the various operations we can perform using this file transfer protocol. Following is a list of all commands;
 USER, PASS, HELP, QUIT, PWD, CWD, CDUP, MKD, RMD, LIST, NOOP, PASV, REIN, RETR, STOR, SYST, TYPE
 
-================================ Important Instructions :=======================
+======================= Important Instructions :=======================
 
 For the Client-Server Communication, we used Predefind PORT NUMBER as 21 For both Client And Server. 
 
