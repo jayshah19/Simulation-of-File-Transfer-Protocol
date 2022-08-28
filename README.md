@@ -16,7 +16,7 @@ For the Client-Server Communication, we used Predefind PORT NUMBER as 21 For bot
 The main reason for choosing PORT Number 21 is that it is commonly associated with FTP and controls the FTP session. 
 
 Some commands Need a passive Mode. For that, Please use the "PASV" command first and then the required command that you want an execution
-=================================================================== SERVER ======================================================================
+=================================================================== SERVER ====================================
 
 -> cd FTPServer
 
@@ -24,7 +24,7 @@ Some commands Need a passive Mode. For that, Please use the "PASV" command first
 
 -> sudo ./server
 
-=================================================================== CLIENT ======================================================================
+=================================================================== CLIENT ====================================
 
 -> cd FTPClient
 
@@ -32,7 +32,7 @@ Some commands Need a passive Mode. For that, Please use the "PASV" command first
 
 -> sudo ./client 127.0.0.1
 
-================================================================ UserName And Passwords ======================================================================
+================================================================ UserName And Passwords =============================
 
 
 Here we implemented Username And Password Authentication for connection establishment between server and client
@@ -40,7 +40,7 @@ Here we implemented Username And Password Authentication for connection establis
 All username-password is case sensitive
 
 				
-======================================================================================================================================================
+=====================================================================================================================
 
 						For Normal Users
 				
@@ -55,7 +55,7 @@ All username-password is case sensitive
 
 			->	karan					GA
 				
-======================================================================================================================================================			
+=====================================================================================================================		
 				
 		For Super Users (No password Needed For Super Users)
 						
@@ -65,4 +65,4 @@ All username-password is case sensitive
         
         ->    JAY
 						
-======================================================================================================================================================
+=====================================================================================================================
