@@ -9,14 +9,15 @@ Here The "USER" command and the "PASS" command are used to communicate the usern
 I have generated 17 commands for the various operations we can perform using this file transfer protocol. Following is a list of all commands;
 USER, PASS, HELP, QUIT, PWD, CWD, CDUP, MKD, RMD, LIST, NOOP, PASV, REIN, RETR, STOR, SYST, TYPE
 
-============================================================== Important Instructions :==============================================================
+================================ Important Instructions :================================
 
 For the Client-Server Communication, we used Predefind PORT NUMBER as 21 For both Client And Server. 
 
 The main reason for choosing PORT Number 21 is that it is commonly associated with FTP and controls the FTP session. 
 
 Some commands Need a passive Mode. For that, Please use the "PASV" command first and then the required command that you want an execution
-=================================================================== SERVER ====================================
+
+================================ SERVER ================================
 
 -> cd FTPServer
 
@@ -24,7 +25,7 @@ Some commands Need a passive Mode. For that, Please use the "PASV" command first
 
 -> sudo ./server
 
-=================================================================== CLIENT ====================================
+================================ CLIENT ================================
 
 -> cd FTPClient
 
@@ -32,7 +33,7 @@ Some commands Need a passive Mode. For that, Please use the "PASV" command first
 
 -> sudo ./client 127.0.0.1
 
-================================================================ UserName And Passwords =============================
+================================ UserName And Passwords ================================
 
 
 Here we implemented Username And Password Authentication for connection establishment between server and client
@@ -40,29 +41,29 @@ Here we implemented Username And Password Authentication for connection establis
 All username-password is case sensitive
 
 				
-=====================================================================================================================
+================================
 
-						For Normal Users
+For Normal Users
 				
-				Name: 					Password:
+Name: 					Password:
 				
 
-			->  aznam				  yacoub
+->  aznam				  yacoub
 
-			->	jay					  admin
+->  jay					  admin
 
-			->	mansi					shah
+->  mansi				  shah
 
-			->	karan					GA
+->  karan			          GA
 				
-=====================================================================================================================		
+================================		
 				
-		For Super Users (No password Needed For Super Users)
+For Super Users (No password Needed For Super Users)
 						
-				->		Professor
+-> Professor
 
-				->		AZNAM
+-> AZNAM
         
-        ->    JAY
+-> JAY
 						
-=====================================================================================================================
+================================
